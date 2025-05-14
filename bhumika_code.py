@@ -81,7 +81,7 @@ print(df_vendors_sorted.head(10))
 top_vendors = df_vendors_sorted[["Vendor ID", "Similarity_Score"]].head(10)
 
 # Save to an Excel file
-output_path = pd.ExcelFile("bhumika_23MI10014_output.xlsx")
+output_path = pd.ExcelFile("bhumika_output.xlsx")
 top_vendors.to_excel(output_path, index=False)
 
 print(f"Top 10 vendors saved to: {output_path}")
